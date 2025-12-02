@@ -34,9 +34,7 @@ const projects: Project[] = [
       'Addressing critical research gaps in real-time poisoning detection under IoT resource constraints',
     ],
     metrics: [
-      { value: '40%+', label: 'Detection Improvement' },
-      { value: '150+', label: 'Papers Analyzed' },
-      { value: 'Real-time', label: 'Detection' },
+      
     ],
   },
   {
@@ -50,9 +48,7 @@ const projects: Project[] = [
       'Assisted in the implementation of end-to-end scanning architecture with automated CVSS scoring and structured vulnerability reporting',
     ],
     metrics: [
-      { value: '92%', label: 'Accuracy' },
-      { value: '89%', label: 'Precision' },
-      { value: '10K+', label: 'Samples' },
+      
     ],
   },
   {
@@ -62,13 +58,10 @@ const projects: Project[] = [
     tech: ['Python', 'PostgreSQL', 'OWASP Top 10', 'FERPA Compliance', 'RBAC'],
     details: [
       'Developing secure workflow automation platform managing sensitive PII for 500+ international students',
-      'Architected role-based access control (RBAC) system with multi-factor authentication',
-      'Implemented encrypted data storage, secure session management, and audit logging',
+      
     ],
     metrics: [
-      { value: '500+', label: 'Students' },
-      { value: '100%', label: 'FERPA Compliant' },
-      { value: 'Zero', label: 'Incidents' },
+      
     ],
   },
 ];
