@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --matrix-green: #0f0;
+  --matrix-cyan: #0ff;
+  --matrix-magenta: #f0f;
+  --matrix-bg: #000;
+}
+
+body {
+  background: var(--matrix-bg);
+  color: var(--matrix-green);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Glitch Text Animations */
+@keyframes glitch1 {
+  0%, 100% { clip-path: inset(40% 0 61% 0); transform: translate(-2px, 2px); }
+  20% { clip-path: inset(92% 0 1% 0); transform: translate(2px, -2px); }
+  40% { clip-path: inset(43% 0 1% 0); transform: translate(-2px, 2px); }
+  60% { clip-path: inset(25% 0 58% 0); transform: translate(2px, -2px); }
+  80% { clip-path: inset(54% 0 7% 0); transform: translate(-2px, 2px); }
+}
+
+@keyframes glitch2 {
+  0%, 100% { clip-path: inset(25% 0 58% 0); transform: translate(2px, -2px); }
+  20% { clip-path: inset(54% 0 7% 0); transform: translate(-2px, 2px); }
+  40% { clip-path: inset(40% 0 61% 0); transform: translate(2px, -2px); }
+  60% { clip-path: inset(92% 0 1% 0); transform: translate(-2px, 2px); }
+  80% { clip-path: inset(43% 0 1% 0); transform: translate(2px, -2px); }
+}
+
+.glitch-wrapper {
+  position: relative;
+}
+
+.glitch-text {
+  position: relative;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  color: #0f0;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-text::before {
+  color: #0ff;
+  animation: glitch1 2s infinite linear alternate-reverse;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.glitch-text::after {
+  color: #f0f;
+  animation: glitch2 3s infinite linear alternate-reverse;
+  text-shadow: 0 0 10px #f0f;
+}
