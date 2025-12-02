@@ -10,9 +10,20 @@ import SkillGrid from '@/components/SkillGrid';
 import CertificationCard from '@/components/CertificationCard';
 import ContactButton from '@/components/ContactButton';
 
-const projects = [
+type ProjectIcon = 'shield' | 'activity' | 'lock';
+
+type Project = {
+  icon: ProjectIcon;
+  title: string;
+  subtitle: string;
+  tech: string[];
+  details: string[];
+  metrics: { value: string; label: string }[];
+};
+
+const projects: Project[] = [
   {
-    icon: 'shield' as const,
+    icon: 'shield',
     title: 'Hybrid Defense Framework for Federated Learning IoT IDS',
     subtitle: 'Adversarial ML Security Research',
     tech: ['Python', 'TensorFlow Federated', 'MITRE ATT&CK', 'IoT Security'],
@@ -29,7 +40,7 @@ const projects = [
     ],
   },
   {
-    icon: 'activity' as const,
+    icon: 'activity',
     title: 'Automated Firmware Vulnerability Detection System',
     subtitle: 'IoMT Security & ML Engineering Research',
     tech: ['Python', 'Scikit-learn', 'XGBoost', 'CVE/NVD APIs', 'CVSS 3.1', 'Docker'],
@@ -45,7 +56,7 @@ const projects = [
     ],
   },
   {
-    icon: 'lock' as const,
+    icon: 'lock',
     title: 'Secure Student Information Management System',
     subtitle: 'Application Security & Compliance',
     tech: ['Python', 'PostgreSQL', 'OWASP Top 10', 'FERPA Compliance', 'RBAC'],
