@@ -12,7 +12,7 @@ import ContactButton from '@/components/ContactButton';
 
 const projects = [
   {
-    icon: 'shield',
+    icon: 'shield' as const,
     title: 'Hybrid Defense Framework for Federated Learning IoT IDS',
     subtitle: 'Adversarial ML Security Research',
     tech: ['Python', 'TensorFlow Federated', 'MITRE ATT&CK', 'IoT Security'],
@@ -27,7 +27,7 @@ const projects = [
     ],
   },
   {
-    icon: 'activity',
+    icon: 'activity' as const,
     title: 'Automated Firmware Vulnerability Detection System',
     subtitle: 'IoMT Security & ML Engineering Research',
     tech: ['Python', 'Scikit-learn', 'XGBoost', 'CVE/NVD APIs', 'CVSS 3.1', 'Docker'],
@@ -41,7 +41,7 @@ const projects = [
     ],
   },
   {
-    icon: 'lock',
+    icon: 'lock' as const,
     title: 'Secure Student Information Management System',
     subtitle: 'Application Security & Compliance',
     tech: ['Python', 'PostgreSQL', 'OWASP Top 10', 'FERPA Compliance', 'RBAC'],
