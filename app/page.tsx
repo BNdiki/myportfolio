@@ -23,7 +23,9 @@ const projects = [
       'Addressing critical research gaps in real-time poisoning detection under IoT resource constraints',
     ],
     metrics: [
-      
+      { value: '40%+', label: 'Detection Improvement' },
+      { value: '150+', label: 'Papers Analyzed' },
+      { value: 'Real-time', label: 'Detection' },
     ],
   },
   {
@@ -37,7 +39,9 @@ const projects = [
       'Assisted in the implementation of end-to-end scanning architecture with automated CVSS scoring and structured vulnerability reporting',
     ],
     metrics: [
-      ,
+      { value: '92%', label: 'Accuracy' },
+      { value: '89%', label: 'Precision' },
+      { value: '10K+', label: 'Samples' },
     ],
   },
   {
@@ -47,10 +51,13 @@ const projects = [
     tech: ['Python', 'PostgreSQL', 'OWASP Top 10', 'FERPA Compliance', 'RBAC'],
     details: [
       'Developing secure workflow automation platform managing sensitive PII for 500+ international students',
-      
+      'Architected role-based access control (RBAC) system with multi-factor authentication',
+      'Implemented encrypted data storage, secure session management, and audit logging',
     ],
     metrics: [
-      
+      { value: '500+', label: 'Students' },
+      { value: '100%', label: 'FERPA Compliant' },
+      { value: 'Zero', label: 'Incidents' },
     ],
   },
 ];
@@ -251,66 +258,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
-         {/* Experience 
-          <section>
-            <SectionTitle icon={Briefcase} title="EXPERIENCE" />
-            <TerminalBox title="~/brian/experience.log" variant="cyan">
-              <div className="space-y-4">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
-                  <div>
-                    <h3 className="text-lg font-bold" style={{ color: '#0ff' }}>
-                      Graduate Research & Teaching Assistant
-                    </h3>
-                    <p className="text-sm" style={{ color: '#0f0' }}>
-                      Morgan State University, Computer Science Department
-                    </p>
-                  </div>
-                  <span 
-                    className="font-mono text-xs px-3 py-1 rounded self-start"
-                    style={{ 
-                      border: '1px solid #0ff',
-                      color: '#0ff'
-                    }}
-                  >
-                    October 2024 - Present
-                  </span>
-                </div>
-                <ul className="space-y-2">
-                  {[
-                    'Conduct cybersecurity research on adversarial ML attacks and IoT security vulnerabilities',
-                    'Support faculty in developing curriculum for ML-based security and threat detection courses',
-                    'Mentor 30+ students on secure coding practices, network security, and vulnerability assessment',
-                    'Perform security assessments and risk analysis for departmental IT infrastructure',
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm">
-                      <span style={{ color: '#0ff' }}>▹</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </TerminalBox>
-          </section> */}
-          
-
-          {/* Education 
-          <section>
-            <SectionTitle icon={GraduationCap} title="EDUCATION" />
-            <TerminalBox title="~/brian/education.dat" variant="green">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                <div>
-                  <h3 className="text-lg font-bold" style={{ color: '#0ff' }}>
-                    Master&apos;s in Advanced Computing
-                  </h3>
-                  <p className="text-sm mb-2">Morgan State University | Fall 2024 - Spring 2026</p>
-                  <p className="text-xs" style={{ color: 'rgba(0, 255, 0, 0.7)' }}>
-                    Specialization in Cybersecurity, Artificial Intelligence, Data Science, and Cloud Computing
-                  </p>
-                </div>
-              </div>
-            </TerminalBox>
-          </section>*/}
         </main>
 
         {/* Footer */}
