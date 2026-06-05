@@ -24,72 +24,42 @@ type Project = {
 const projects: Project[] = [
   {
     icon: 'shield',
-    title: 'Hybrid Defense Framework for Federated Learning IoT IDS',
-    subtitle: 'Adversarial ML Security Research',
-    tech: ['Python', 'TensorFlow Federated', 'MITRE ATT&CK', 'IoT Security'],
+    title: 'HADF: Hybrid Adaptive Defense Framework for Federated Learning IoT IDS',
+    subtitle: "Master's Thesis — Defended Spring 2026 | Morgan State University",
+    tech: ['Python', 'TensorFlow', 'Federated Learning', 'MITRE ATT&CK for ICS', 'N-BaIoT Dataset', 'IoT Security'],
     details: [
-      'Conducting comprehensive security analysis of data poisoning attacks in federated learning-based IoT IDS through systematic review of 150+ research papers (2020-2025) using PRISMA methodology',
-      'Analyzing attack vectors including model poisoning, gradient manipulation, and backdoor injection techniques affecting distributed IoT security architectures',
-      'Designing hybrid defense framework combining anomaly detection, Byzantine-robust aggregation, and differential privacy to mitigate adaptive adversarial attacks',
-      'Addressing critical research gaps in real-time poisoning detection under IoT resource constraints',
+      'Architected HADF: a multi-layered defense system for federated learning-based IDS targeting four adversarial attack classes — label flipping, backdoor injection, Byzantine, and Sybil attacks — within simulated IoT network environments.',
+      'Engineered a multi-layered ML security architecture combining anomaly-based client scoring, Byzantine-robust gradient aggregation, and calibrated differential privacy, directly addressing critical research gaps in real-time poisoning detection under IoT resource constraints.',
+      'Designed, implemented, and defended the framework validating its effectiveness against all four adversarial attack classes across simulated IoT network environments.',
     ],
-    metrics: [
-      
-    ],
-  },
-  {
-    icon: 'activity',
-    title: 'Automated Firmware Vulnerability Detection System',
-    subtitle: 'IoMT Security & ML Engineering Research',
-    tech: ['Python', 'Scikit-learn', 'XGBoost', 'CVE/NVD APIs', 'CVSS 3.1', 'Docker'],
-    details: [
-      'Co-Engineered ML-based vulnerability scanner for connected medical device firmware using FirmSec dataset containing 10,000+ firmware samples',
-      'Co-Developed automated feature extraction pipeline processing 50,000+ firmware components to identify CVE patterns and security anomalies',
-      'Assisted in the implementation of end-to-end scanning architecture with automated CVSS scoring and structured vulnerability reporting',
-    ],
-    metrics: [
-      
-    ],
-  },
-  {
-    icon: 'lock',
-    title: 'Secure Student Information Management System',
-    subtitle: 'Application Security & Compliance',
-    tech: ['Python', 'PostgreSQL', 'OWASP Top 10', 'FERPA Compliance', 'RBAC'],
-    details: [
-      'Developing secure workflow automation platform managing sensitive PII for 500+ international students',
-      
-    ],
-    metrics: [
-      
-    ],
+    metrics: [],
   },
 ];
 
 const skillCategories = [
   {
+    name: 'AI/ML Security',
+    skills: ['Adversarial ML', 'Data Poisoning Defense', 'Federated Learning Security', 'Anomaly Detection', 'Byzantine-Fault Tolerance', 'Differential Privacy'],
+  },
+  {
     name: 'Security Tools',
-    skills: ['Wireshark', 'Nmap', 'Burp Suite', 'Metasploit', 'John the Ripper'],
+    skills: ['Wireshark', 'Nmap', 'Burp Suite', 'Metasploit', 'Wazuh SIEM', 'AnyRun', 'Kali Linux'],
   },
   {
-    name: 'Programming',
-    skills: ['Python', 'Bash', 'SQL', 'PowerShell'],
+    name: 'ML & Data Stack',
+    skills: ['Python', 'TensorFlow', 'Scikit-learn', 'XGBoost', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter'],
   },
   {
-    name: 'ML/Data Analysis',
-    skills: ['Scikit-learn', 'TensorFlow', 'XGBoost', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter'],
+    name: 'Cloud & Infrastructure',
+    skills: ['AWS EC2', 'AWS S3', 'AWS IAM', 'AWS VPC', 'Least-Privilege Hardening'],
   },
   {
-    name: 'Cloud & DevOps',
-    skills: ['AWS (IAM, CloudWatch, GuardDuty etc)'],
-  },
-  {
-    name: 'SIEM & Monitoring',
-    skills: ['AnyRun', 'Wazuh'],
+    name: 'Security Domains',
+    skills: ['Threat Modeling', 'Vulnerability Assessment', 'Penetration Testing', 'Incident Response', 'Risk Assessment', 'SIEM Monitoring', 'Secure SDLC'],
   },
   {
     name: 'Frameworks',
-    skills: ['NIST CSF', 'OWASP Top 10', 'CVE/CVSS', 'MITRE ATT&CK'],
+    skills: ['NIST CSF', 'OWASP Top 10', 'CVE/CVSS', 'MITRE ATT&CK for ICS'],
   },
 ];
 
@@ -149,11 +119,11 @@ export default function Home() {
             
             {/* Title */}
             <div className="mb-8">
-              <p 
+              <p
                 className="font-mono text-sm md:text-base tracking-wider mb-2"
                 style={{ color: '#0ff' }}
               >
-                CYBERSECURITY ENGINEER | AI/ML SECURITY SPECIALIST
+                CYBERSECURITY RESEARCHER | AI/ML SECURITY SPECIALIST | M.S. ADVANCED COMPUTING
               </p>
               <style>{`
                 @keyframes blink {
@@ -212,11 +182,10 @@ export default function Home() {
               <div className="space-y-3">
                 <p style={{ color: '#0ff' }}>$ cat professional_summary.txt</p>
                 <p className="leading-relaxed">
-                  Cybersecurity engineer specializing in AI/ML security, IoT threat detection, and adversarial machine learning defense. 
-                  Expertise in vulnerability assessment, penetration testing, and automated security monitoring for medical IoT devices 
-                  and federated learning architectures. Proven experience in incident response, threat intelligence, and secure application 
-                  development. Research focus on data poisoning attacks, firmware security analysis, and ML-driven intrusion detection 
-                  systems. Skilled in risk management, compliance frameworks (NIST, OWASP, MITRE ATT&CK), and cloud security.
+                  Cybersecurity and AI/ML Security researcher (M.S. Advanced Computing, Morgan State University, 2026) specializing in
+                  adversarial machine learning defense, federated learning security, and IoT intrusion detection systems.
+                  Seeking cybersecurity and AI/ML security roles where hands-on research in threat detection, ML-based vulnerability analysis,
+                  and federated learning defense translates directly into protecting enterprise infrastructure.
                 </p>
                 <p className="mt-4" style={{ color: '#0ff' }}>$ echo $FOCUS_AREAS</p>
                 <p>
@@ -224,13 +193,13 @@ export default function Home() {
                     Adversarial ML Defense
                   </span>
                   <span className="px-2 py-1 mr-2 rounded" style={{ background: 'rgba(0, 255, 0, 0.2)' }}>
-                    IoT Security
+                    Federated Learning Security
                   </span>
                   <span className="px-2 py-1 mr-2 rounded" style={{ background: 'rgba(0, 255, 0, 0.2)' }}>
-                    Vulnerability Assessment
+                    IoT IDS
                   </span>
                   <span className="px-2 py-1 rounded" style={{ background: 'rgba(0, 255, 0, 0.2)' }}>
-                    Threat Intelligence
+                    Vulnerability Assessment
                   </span>
                 </p>
               </div>
@@ -243,6 +212,74 @@ export default function Home() {
             <div className="space-y-6">
               {projects.map((project, index) => (
                 <ProjectCard key={index} project={project} />
+              ))}
+            </div>
+          </section>
+
+          {/* Professional Experience */}
+          <section>
+            <SectionTitle icon={Briefcase} title="EXPERIENCE" />
+            <div className="space-y-6">
+              {[
+                {
+                  role: 'Graduate Assistant & Teaching Assistant',
+                  org: 'Morgan State University — CS Dept. & Office of International Affairs',
+                  location: 'Baltimore, MD',
+                  period: 'Oct 2024 – May 2026',
+                  bullets: [
+                    'Designed, implemented, and defended HADF — a hybrid adaptive defense framework for federated learning-based IoT IDS — validating its effectiveness against four adversarial attack classes across simulated IoT network environments using Python and TensorFlow.',
+                    'Engineered a multi-layered ML security architecture combining anomaly-based client scoring, Byzantine-robust gradient aggregation, and calibrated differential privacy, addressing critical research gaps in real-time poisoning detection under IoT resource constraints.',
+                  ],
+                },
+                {
+                  role: 'Network Systems, Cloud & Cybersecurity Trainee',
+                  org: 'Ripplewave Ltd',
+                  location: 'Mombasa, Kenya',
+                  period: 'Oct 2023 – Jul 2024',
+                  bullets: [
+                    'Deployed and hardened AWS cloud infrastructure (EC2, S3, IAM, VPC) for enterprise clients, implementing least-privilege IAM policies and security group rules that eliminated over-privileged access across 3 client environments.',
+                    'Executed vulnerability assessments and network security audits across hybrid cloud deployments, documenting findings with CVE/CVSS severity scoring and delivering actionable remediation roadmaps.',
+                    'Delivered structured security awareness training to 50+ end users, covering phishing identification, password hygiene, and secure data handling to reduce human-layer attack surface.',
+                  ],
+                },
+                {
+                  role: 'Service Point Advisor',
+                  org: 'DHL Kenya Ltd',
+                  location: 'Mombasa, Kenya',
+                  period: 'Oct 2018 – Aug 2023',
+                  bullets: [
+                    'Processed 100+ inbound and outbound shipments daily maintaining on-time performance targets and full compliance with transit and customs safety standards.',
+                    'Mentored youth career readiness skills through DHL\'s GoTeach partnership with SOS Children\'s Villages International, coaching 20+ young people on professional development.',
+                  ],
+                },
+                {
+                  role: 'Computer Systems & Software Technician Intern',
+                  org: 'Kenya Ports Authority',
+                  location: 'Mombasa, Kenya',
+                  period: 'Jun 2016 – Aug 2016',
+                  bullets: [
+                    'Deployed and configured enterprise software (MS Office, SAP, KWATOS, Microsoft Forefront Endpoint Protection) across 50+ endpoints, supporting authority-wide IT infrastructure rollout.',
+                    'Installed UTP and fiber optic structured cabling and diagnosed RJ45/VHF network connectivity failures, minimizing operational downtime across port authority IT systems.',
+                  ],
+                },
+              ].map((exp, i) => (
+                <TerminalBox key={i} title={`~/experience/${exp.role.toLowerCase().replace(/\s+/g, '_')}.log`}>
+                  <div className="space-y-2">
+                    <div className="flex flex-wrap justify-between gap-2">
+                      <span style={{ color: '#0ff' }} className="font-mono font-bold">{exp.role}</span>
+                      <span style={{ color: 'rgba(0,255,0,0.6)' }} className="font-mono text-xs">{exp.period}</span>
+                    </div>
+                    <p style={{ color: 'rgba(0,255,0,0.7)' }} className="font-mono text-xs">{exp.org} | {exp.location}</p>
+                    <ul className="mt-3 space-y-2 list-none">
+                      {exp.bullets.map((b, j) => (
+                        <li key={j} className="flex gap-2">
+                          <span style={{ color: '#0f0' }}>›</span>
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </TerminalBox>
               ))}
             </div>
           </section>
@@ -262,6 +299,25 @@ export default function Home() {
               ))}
             </div>
           </section>
+          {/* Education */}
+          <section>
+            <SectionTitle icon={GraduationCap} title="EDUCATION" />
+            <TerminalBox title="~/education/morgan_state.log">
+              <div className="space-y-3">
+                <div className="flex flex-wrap justify-between gap-2">
+                  <span style={{ color: '#0ff' }} className="font-mono font-bold">M.S., Advanced Computing — Cybersecurity &amp; AI/ML Security</span>
+                  <span style={{ color: 'rgba(0,255,0,0.6)' }} className="font-mono text-xs">Fall 2024 – Spring 2026</span>
+                </div>
+                <p style={{ color: 'rgba(0,255,0,0.7)' }} className="font-mono text-xs">Morgan State University | Baltimore, MD</p>
+                <div className="mt-2 space-y-1">
+                  <p><span style={{ color: '#0ff' }}>Thesis:</span> A Hybrid Adaptive Defense Framework Against Poisoning and Identity-Based Attacks in Federated Learning-Based IoT Intrusion Detection Systems</p>
+                  <p><span style={{ color: '#0ff' }}>Award:</span> 2026 Academic Trailblazer Award (SOS Awards)</p>
+                  <p><span style={{ color: '#0ff' }}>Roles:</span> Graduate Research Assistant · Teaching Assistant</p>
+                </div>
+              </div>
+            </TerminalBox>
+          </section>
+
         </main>
 
         {/* Footer */}
